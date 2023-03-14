@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  font-family: sans-serif;
+  background-color: lime;
+}
+
+fieldset {
+  display: grid;
+  column-gap: 2rem;
+  padding: 4rem 2rem 3rem;
+  grid-template-columns: auto auto auto;
+  overflow: hidden;
+  background-color: white;
+  border: solid 2rem limegreen;
+  box-shadow: 1rem 1rem 0 0 magenta;
+  border-radius: 1rem;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='128px' width='128px' style='fill:black;font-size:64px;'><text y='45%'>✊🏼</text></svg>"), auto;
+}
+fieldset legend {
+  text-transform: uppercase;
+  font-family: "Rampart One", sans-serif;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  background-color: limegreen;
+  box-shadow: 1rem 1rem 0 0 magenta;
+  border-radius: 1rem;
+}
+fieldset div {
+  position: relative;
+}
+fieldset div input[type=radio],
+fieldset div label {
+  margin: 0;
+  padding: 2rem 1rem;
+  display: block;
+  width: 14rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='128px' width='128px' style='fill:black;font-size:64px;'><text y='45%'>🫵🏼</text></svg>"), auto;
+}
+fieldset div input[type=radio] {
+  display: none;
+}
+fieldset div input[type=radio] + label {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 1.4rem;
+  text-shadow: 0 -0.1rem 0 blueviolet;
+  letter-spacing: -0.1rem;
+  background-color: magenta;
+  border-radius: 10vw;
+  top: 0;
+  box-shadow: 0 1.2rem 0 blueviolet;
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+fieldset div input[type=radio] + label:after {
+  pointer-events: none;
+  content: "🤚";
+  font-size: 20rem;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  line-height: 0;
+  position: absolute;
+  top: 20rem;
+  left: auto;
+  right: 4rem;
+  bottom: auto;
+  width: 5rem;
+  height: 6rem;
+  transition: all 0.2s ease-in-out;
+}
+fieldset div input[type=radio] + label:hover {
+  top: 0.4rem;
+  box-shadow: 0 0.8rem 0 blueviolet, inset 0 0 10rem rgba(0, 0, 0, 0.1);
+}
+fieldset div input[type=radio] + label:hover:after {
+  top: 4rem;
+  font-size: 5rem;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+fieldset div input[type=radio]:checked + label {
+  background-color: magenta;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  top: 0.8rem;
+  text-shadow: 0 0.1rem 0 blueviolet;
+  box-shadow: 0 0.4rem 0 blueviolet, inset 0 0 10rem rgba(0, 0, 0, 0.75);
+}
+fieldset div input[type=radio]:checked + label:after {
+  content: "🖐️";
+  font-size: 4rem;
+  top: 4.8rem;
+  text-shadow: 0 -0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+fieldset div input[type=radio]:checked + label:hover {
+  top: 0.9rem;
+  border: solid 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.3rem 0 blueviolet, inset 0 0 10rem rgba(0, 0, 0, 0.8);
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='128px' width='128px' style='fill:black;font-size:64px;'><text y='45%'>👊🏼</text></svg>"), auto;
+}
+fieldset div input[type=radio]:checked + label:hover:after {
+  top: 5.2rem;
+  font-size: 3.9rem;
+}
